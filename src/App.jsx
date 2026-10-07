@@ -12,7 +12,9 @@ import ContactMe from "./pages/ContactMe";
 /** Scrolls to the top whenever the route changes. */
 function ScrollToTop() {
   const { pathname } = useLocation();
-  useEffect(() => window.scrollTo(0, 0), [pathname]);
+     useEffect(() => {
+     window.scrollTo(0, 0);
+   }, [pathname]);
   return null;
 }
 
