@@ -1,0 +1,35 @@
+/* ---------- Design tokens: change colours here to restyle the whole site ---------- */
+:root {
+  --color-primary: #1e3a8a;
+  --color-primary-dark: #172554;
+  --color-accent: #38bdf8;
+  --color-text: #1f2937;
+  --color-muted: #4b5563;
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --radius: 10px;
+  --shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+  --space: 1.5rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+h1, h2, h3 { line-height: 1.25; color: var(--color-primary-dark); margin: 0 0 0.75rem; }
+h1 { font-size: clamp(2rem, 5vw, 2.75rem); }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.15rem; margin-top: 1.5rem; }
+p { margin: 0 0 1rem; }
+img { max-width: 100%; display: block; }
+a { color: var(--color-primary); }
+
+.container { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 var(--space); }
+.section { padding: 3rem 0; }
